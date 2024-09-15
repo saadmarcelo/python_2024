@@ -1,6 +1,6 @@
 """
     Exercicio com funcoes
-    crie uma funcoa que multilplica todos os argumentos
+    crie uma funcao que multilplica todos os argumentos
     nao nomeados recebidos
     retorne o valor total para uma variavel e motre o valor da variavel
 """
@@ -16,10 +16,8 @@ def multi(*args):
 valor_mult = multi(2, 3, 4)
 print(valor_mult)
 
-"""
-    crie uma funcao fala se um numero é par ou impar
-    retorne se o numer é par ou impar
-"""
+#    crie uma funcao fala se um numero é par ou impar
+#    retorne se o numer é par ou impar
 
 
 def impar_par(x):
