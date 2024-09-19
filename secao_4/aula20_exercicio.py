@@ -2,8 +2,8 @@
 Crie uma funcao que encontra o primeiro duplicado considerando o segundo
 numero como a duplicacao. Retorne a duplicação considerada.
 Requisitor:
-    A ordem do numero duplicado é considerado a partir da segunda ocorrencia do numero
-    , ou seja, o numero duplicado em si
+    A ordem do numero duplicado é considerado a partir da segunda ocorrencia do
+    numero, ou seja, o numero duplicado em si
     Exemplo:
         [1, 2, 3, ->3<-, 2, 1] ->1, 2, e 3 são duplicados (retorne 3)
         [1, 2, 3, 4, 5, 6] -> retorne -1 ( nao tem duplicados)
@@ -25,3 +25,20 @@ lista_de_listas_de_inteiros = [
     [5, 3, 1, 8, 5, 7, 1, 8, 8, 7],
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
+
+
+def encontra_primeiro_duplicado(lista_de_inteiros):
+    numeros_checados = set()
+    primeiro_duplicado = -1
+
+    for numero in lista_de_inteiros:
+        if numero in numeros_checados:
+            primeiro_duplicado = numero
+            break
+        numeros_checados.add(numero)
+
+    return primeiro_duplicado
+
+
+for lista in lista_de_listas_de_inteiros:
+    print(encontra_primeiro_duplicado(lista))
