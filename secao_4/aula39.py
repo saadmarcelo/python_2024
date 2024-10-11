@@ -10,3 +10,5 @@ o python conhece todos os modulos e pacotes presentes no caminho do sys.path
 import aula39_m
 
 print("Este modulo se chama", __name__)
+print(aula39_m.variavel_modulo)
+print(aula39_m.soma(2, 3))
