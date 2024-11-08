@@ -27,4 +27,6 @@ l2 = ["BA", "SP", "MG", "RJ"]
 # funcao zip faz a mesma coisa q o codigo acima mas ele retorna um iterator
 
 print(list(zip(l1, l2)))
-print(list(zip_longest(l1, l2)))  # funcao zip_longest imprime os valores da maior lista
+print(
+    list(zip_longest(l1, l2, fillvalue="SEM CIDADE"))
+)  # funcao zip_longest imprime os valores da maior lista
