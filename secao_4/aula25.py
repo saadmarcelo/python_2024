@@ -35,4 +35,5 @@ novos_produtos = [
     for produto in produtos
     if produto["preco"] > 10
 ]
+
 p(novos_produtos)
